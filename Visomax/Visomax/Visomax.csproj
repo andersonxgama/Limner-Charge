@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6343E62-2FE7-4D05-9655-3176E2AEB646}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Visomax</RootNamespace>
+    <AssemblyName>Visomax</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="buscaBorderoFiltros.cs" />
+    <Compile Include="frmAdmCartoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmCartoes.Designer.cs">
+      <DependentUpon>frmAdmCartoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarHistoricoCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarHistoricoCobranca.Designer.cs">
+      <DependentUpon>frmAlterarHistoricoCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanguelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanguelas.Designer.cs">
+      <DependentUpon>frmBanguelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBordero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBordero.Designer.cs">
+      <DependentUpon>frmBordero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaCartões.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaCartões.Designer.cs">
+      <DependentUpon>frmBuscaCartões.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaDebito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaDebito.Designer.cs">
+      <DependentUpon>frmBuscaDebito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaGerencialCombranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaGerencialCombranca.Designer.cs">
+      <DependentUpon>frmBuscaGerencialCombranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarBordero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarBordero.Designer.cs">
+      <DependentUpon>frmBuscarBordero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarteirasPendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarteirasPendentes.Designer.cs">
+      <DependentUpon>frmCarteirasPendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobradoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobradoras.Designer.cs">
+      <DependentUpon>frmCobradoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCobranca.Designer.cs">
+      <DependentUpon>frmCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaDebito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaDebito.Designer.cs">
+      <DependentUpon>frmConsultaDebito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaGerencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaGerencial.Designer.cs">
+      <DependentUpon>frmConsultaGerencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaParcelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaParcelas.Designer.cs">
+      <DependentUpon>frmConsultaParcelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaRecebimentoLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaRecebimentoLoja.Designer.cs">
+      <DependentUpon>frmConsultaRecebimentoLoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosCadastrais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosCadastrais.Designer.cs">
+      <DependentUpon>frmDadosCadastrais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventosCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventosCobranca.Designer.cs">
+      <DependentUpon>frmEventosCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExecucaoCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExecucaoCobranca.Designer.cs">
+      <DependentUpon>frmExecucaoCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGerenciaisCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGerenciaisCobranca.Designer.cs">
+      <DependentUpon>frmGerenciaisCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoricoCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoricoCobranca.Designer.cs">
+      <DependentUpon>frmHistoricoCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminadimplencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminadimplencia.Designer.cs">
+      <DependentUpon>frminadimplencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformacoesCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformacoesCartao.Designer.cs">
+      <DependentUpon>frmInformacoesCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecebimentoCaixas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecebimentoCaixas.Designer.cs">
+      <DependentUpon>frmRecebimentoCaixas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenda.Designer.cs">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="S8_RealDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>S8_RealDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VisomaxDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisomaxDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAdmCartoes.resx">
+      <DependentUpon>frmAdmCartoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarHistoricoCobranca.resx">
+      <DependentUpon>frmAlterarHistoricoCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanguelas.resx">
+      <DependentUpon>frmBanguelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBordero.resx">
+      <DependentUpon>frmBordero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaCartões.resx">
+      <DependentUpon>frmBuscaCartões.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaDebito.resx">
+      <DependentUpon>frmBuscaDebito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaGerencialCombranca.resx">
+      <DependentUpon>frmBuscaGerencialCombranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarBordero.resx">
+      <DependentUpon>frmBuscarBordero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarteirasPendentes.resx">
+      <DependentUpon>frmCarteirasPendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCobradoras.resx">
+      <DependentUpon>frmCobradoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCobranca.resx">
+      <DependentUpon>frmCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaDebito.resx">
+      <DependentUpon>frmConsultaDebito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaGerencial.resx">
+      <DependentUpon>frmConsultaGerencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaParcelas.resx">
+      <DependentUpon>frmConsultaParcelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaRecebimentoLoja.resx">
+      <DependentUpon>frmConsultaRecebimentoLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosCadastrais.resx">
+      <DependentUpon>frmDadosCadastrais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventosCobranca.resx">
+      <DependentUpon>frmEventosCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExecucaoCobranca.resx">
+      <DependentUpon>frmExecucaoCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGerenciaisCobranca.resx">
+      <DependentUpon>frmGerenciaisCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoricoCobranca.resx">
+      <DependentUpon>frmHistoricoCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminadimplencia.resx">
+      <DependentUpon>frminadimplencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformacoesCartao.resx">
+      <DependentUpon>frmInformacoesCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecebimentoCaixas.resx">
+      <DependentUpon>frmRecebimentoCaixas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenda.resx">
+      <DependentUpon>frmVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="S8_RealDataSet.xsc">
+      <DependentUpon>S8_RealDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="S8_RealDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>S8_RealDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="S8_RealDataSet.xss">
+      <DependentUpon>S8_RealDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VisomaxDataSet.xsc">
+      <DependentUpon>VisomaxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VisomaxDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VisomaxDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VisomaxDataSet.xss">
+      <DependentUpon>VisomaxDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
